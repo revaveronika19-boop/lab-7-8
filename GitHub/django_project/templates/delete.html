@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Видалення</h1><form method="post">{% csrf_token %}<p>Видалити {{ item.title }}?</p><button>Так</button></form>{% endblock %}

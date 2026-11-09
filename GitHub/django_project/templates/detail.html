@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>{{ item.title }}</h1><p>{{ item.description }}</p><p>Ціна: {{ item.price }}</p><a href="{% url 'update_item' item.pk %}">Редагувати</a> <a href="{% url 'delete_item' item.pk %}">Видалити</a>{% endblock %}

@@ -1,0 +1,4 @@
+Django>=5.1,<6.0
+pytest>=8,<10
+pytest-django>=4.8,<5
+pytest-cov>=5,<8

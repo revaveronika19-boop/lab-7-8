@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Зворотний зв'язок</h1><form method="post">{% csrf_token %}{% for field in form %}<div>{{ field.label_tag }} {{ field }} {{ field.errors }}</div>{% endfor %}<button>Надіслати</button></form>{% endblock %}

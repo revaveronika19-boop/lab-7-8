@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Головна{% endblock %}{% block content %}<h1>{{ title|default('Каталог') }}</h1><p>Кількість: {{ count }} · Подвійна кількість: {{ count * 2 }}</p>{% if items %}<ul>{% for item in items %}<li>{{ item.title }} — {{ item.price }}</li>{% endfor %}</ul>{% else %}<p>Поки порожньо</p>{% endif %}{% endblock %}

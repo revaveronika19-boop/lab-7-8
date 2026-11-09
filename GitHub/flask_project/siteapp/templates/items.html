@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Список{% endblock %}{% block content %}<h1>{{ title }}</h1><form><input name="q" placeholder="Пошук"><button>Шукати</button></form><p>Знайдено: {{ count }}</p>{% for item in items %}<p>{{ item.title|truncate(50) }} — {{ item.category.name }}</p>{% else %}<p>Немає результатів</p>{% endfor %}{% endblock %}

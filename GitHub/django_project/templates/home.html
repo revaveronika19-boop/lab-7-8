@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Головна{% endblock %}{% block content %}<h1>{{ title|default:'Каталог' }}</h1><p>Усього записів: {{ count }}</p>{% if items %}<ul>{% for item in items %}<li>{{ item.title|truncatewords:8 }} — {{ item.price }}</li>{% endfor %}</ul>{% else %}<p>Записів поки немає.</p>{% endif %}{% endblock %}
